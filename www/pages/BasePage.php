@@ -119,7 +119,7 @@ class BasePage
 
 		if (isset($_SERVER['SERVER_NAME'])) {
 			$this->serverurl = (
-				($this->https === true ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'] .
+				($this->https === true ? 'https://' : 'http://') . '192.168.2.12' .
 				(($_SERVER['SERVER_PORT'] != '80' && $_SERVER['SERVER_PORT'] != '443') ?
 					':' . $_SERVER['SERVER_PORT'] : '') .
 				WWW_TOP . '/'

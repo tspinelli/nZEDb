@@ -201,8 +201,8 @@ class OpCacheService
 					? gethostname()
 					: (php_uname('n')
 						?: (empty($_SERVER['SERVER_NAME'])
-							? $_SERVER['HOST_NAME']
-							: $_SERVER['SERVER_NAME']
+							? '192.168.2.12'
+							: '192.168.2.12'
 						)
 					)
 				)
